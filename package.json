@@ -10,7 +10,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start", 
+    "start": "react-scripts start",
     "build": "rmdir /s /q dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -28,8 +28,9 @@
       "not op_mini all"
     ],
     "keywords": [
-      "modal",
-      "react"      
+      "simple",
+      "react",
+      "modal"
     ],
     "development": [
       "last 1 chrome version",
@@ -38,10 +39,15 @@
     ]
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
+    "@babel/cli": "^7.23.4",
+    "@babel/core": "^7.23.7",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/preset-env": "^7.23.8",
+    "@babel/preset-react": "^7.23.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "regenerator-runtime": "^0.14.1"
   },
   "peerDependencies": {
     "prop-types": "^15.8.1",
