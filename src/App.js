@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+ 
+import { useState } from 'react';
+ 
+import Modal from './lib/Modal';
+ 
 
 function App() {
+  const [isOpen,setIsOpen]=useState(false)
+ const onClose=()=>{
+  setIsOpen(false)
+ }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+   
+    <button onClick={()=>setIsOpen(true)}>button</button>
+     <Modal isOpen={isOpen} onClose={onClose} 
+     content={'connected'} styleTitleModal={{color:'white'}} titlHeaderModal={'argent'}
+     styleModal={{backgroundColor:'blue',height:'100px',borderRadius:'5px',
+     boxShadow:'10px 5px 5px white'}}/>
+    </>
+    
   );
 }
 
