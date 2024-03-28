@@ -2,11 +2,24 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './modal.css';
 
+/**
+ *  Function to create Modal Component modulable
+ * @param {boolean} param0
+ * @param {function} param1
+ * @param {string} param2-3
+ * @param {propertiesCss}param5-6-7
+ * @returns {jsx element modal}
+ */
 const Modal = ({ isOpen, 
-  onClose, contentModal,titlHeaderModal,styleTitleModal,styleModal,styleContent }) => {
+                 onClose,
+                 contentModal,
+                 titlHeaderModal,
+                 styleTitleModal,
+                 styleModal,
+                 styleContent }) => {
  
     return (
-      <>
+      <div>
       {isOpen && <div className="container-modal">
         <div className="modal" style={{...styleModal}}>
           <header className='header-modal' >
@@ -19,8 +32,7 @@ const Modal = ({ isOpen,
           
         </div>
       </div>}
-      </>
-      
+      </div>      
     );
   }
  
