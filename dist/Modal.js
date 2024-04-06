@@ -26,6 +26,12 @@ const Modal = _ref => {
     styleModal,
     styleContent
   } = _ref;
+  if (isOpen) {
+    console.log("etat isopen", isOpen);
+    document.body.classList.add('modal-open');
+  } else {
+    document.body.classList.remove('modal-open');
+  }
   return /*#__PURE__*/_react.default.createElement("div", null, isOpen && /*#__PURE__*/_react.default.createElement("div", {
     className: "container-modal"
   }, /*#__PURE__*/_react.default.createElement("div", {

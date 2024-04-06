@@ -1,6 +1,6 @@
 {
-  "name": "simpl-react-modal",
-  "version": "0.1.1",
+  "name": "simple-react-modal-lw",
+  "version": "0.1.0",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -30,7 +30,8 @@
     "keywords": [
       "simple",
       "react",
-      "modal"
+      "modal",
+      "lw"
     ],
     "development": [
       "last 1 chrome version",

@@ -17,6 +17,13 @@ const Modal = ({ isOpen,
                  styleTitleModal,
                  styleModal,
                  styleContent }) => {
+                  if(isOpen){
+                    console.log("etat isopen",isOpen)
+                    document.body.classList.add('modal-open');
+                  }else{
+                    document.body.classList.remove('modal-open');
+                     
+                  }
  
     return (
       <div>

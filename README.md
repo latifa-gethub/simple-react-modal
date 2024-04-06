@@ -7,7 +7,7 @@
 ![alt text](<public/assets/Sans titre.png>)
 ## Installing the package in your project:
 
-`npm install simple-react-modal`
+`npm install simple-react-modal-lw`
 
 ## Prerequisites :
 * Node.js v9.5.1
@@ -52,4 +52,4 @@ The Modal component accepts the following props:
 * styleModal(cssProperties): Style to use for global Modal container
 
 ## Keywords : 
- `simple` `react` `modal` 
+ `simple` `react` `modal` `lw`
