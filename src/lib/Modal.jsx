@@ -13,6 +13,7 @@ import './modal.css';
 const Modal = ({ isOpen, 
                  onClose,
                  contentModal,
+                 headerModal,
                  titlHeaderModal,
                  styleTitleModal,
                  styleModal,
@@ -29,7 +30,7 @@ const Modal = ({ isOpen,
       <div>
       {isOpen && <div className="container-modal">
         <div className="modal" style={{...styleModal}}>
-          <header className='header-modal' >
+          <header style={{...headerModal}} className='header-modal' >
             <h3 style={{...styleTitleModal}}>{titlHeaderModal}</h3>
             <button className="modal-close-button" onClick={onClose}>
               X

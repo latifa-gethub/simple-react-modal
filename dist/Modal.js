@@ -21,6 +21,7 @@ const Modal = _ref => {
     isOpen,
     onClose,
     contentModal,
+    headerModal,
     titlHeaderModal,
     styleTitleModal,
     styleModal,
@@ -40,6 +41,9 @@ const Modal = _ref => {
       ...styleModal
     }
   }, /*#__PURE__*/_react.default.createElement("header", {
+    style: {
+      ...headerModal
+    },
     className: "header-modal"
   }, /*#__PURE__*/_react.default.createElement("h3", {
     style: {

@@ -10,6 +10,7 @@ function App() {
             onClose={function(){setIsOpen(false)}} 
             contentModal={'contentModal'} 
             styleTitleModal={{color:'transparent'}} 
+            headerModal={{backgroundColor:'red'}}
             titlHeaderModal={'titleModal'}
             styleModal={{height:'200px',borderRadius:'5px',
                          boxShadow:'5px 5px 5px #9a9595'}}/>
